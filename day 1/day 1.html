@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge</title>
+    <style>
+        .container-1{
+            background-color: #ffffff;
+            border: 1px solid #3449;
+            padding: 15px;
+            width: 600px;
+            margin: auto;
+            border-radius: 10px;
+            margin-top: 15%;
+            margin-bottom: 15%;
+            box-shadow: 10px 10px 10px 10px #3449 inset;
+        }
+        h2{
+            text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+        }
+        p{
+            text-align: center;
+            font-size: 20px;
+        }
+        .input_box{
+            display: flex;
+            flex-direction: row;
+            margin-left: 50px;
+        }
+        input[type="text"]{
+            height: 45px !important;
+            width: 60%;
+            color: red;
+            margin-right: 15px;
+            border-radius: 5px !important;
+        }
+        input[type="checkbox"]{
+            height: 16px;
+            width:16px;
+            text-align: center;
+            background-color: darkgray;
+        }
+        button{
+            width: 20%;
+            border-radius: 5px !important;
+            background-color: fuchsia;
+            font-size: 18px;
+            border: 1p solid #3449;
+            color: whitesmoke;
+        }
+        button:hover{
+            color: aliceblue;
+            background-color: #472222;
+            text-decoration: none;
+        }
+        .bottom{
+            display: flex;
+            flex-direction: row;
+            margin-left: 50px;
+            align-items: first  baseline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-1" onsubmit="validateEmail">
+        <h2>Let's keep in touch</h2>
+        <p>Subscribe to keep up with fresh news and exciting updates.</p>
+        <p>We promise not to spam you!</p>
+        <div class="input_box">
+            <input type="text" placeholder="Enter the Electronic mail to send">
+            <button >send</button>
+         </div>
+        <div class="bottom">
+            <input type="checkbox"><p>I agree to my email address being stored and <br>used to share to receive monthly newsletter</p></input>
+        </div>
+        <script>
+            function validateEmail() {
+                var email = document.input-box.email.value;
+                if (email == "" || email == null) {
+                    alert("Please enter a valid email address");
+                    return false;
+                }
+                else{
+                    alert("Suceeded, monthly newsletters will be sent to you via email");
+                }
+            }
+        </script>
+    </div>
+</body>
+</html>

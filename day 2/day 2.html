@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container-2{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: 30%;
+            background-color: #cccccc;
+            border: #ccc;
+            margin-top: 5%;
+            height: 80vh;
+            width: 45%;
+        }
+        .left{
+            width: 50%;
+            height: 70%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .left .left-box{
+            margin: 0;
+            height: 80%;
+        }
+        p{
+            text-indent: 20px;
+        }
+        .left-box h2{
+            font-size: 15px !important;
+            text-indent: 20px;
+            font-weight: 500;
+        }
+        .left img{
+            height: 20px;
+            margin-left: 20px;
+            width: 20px;
+        }
+        .right{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .right form{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            height: 70%;
+            width: 70%;
+        }
+        input[type="submit"], input[type="text"], input[type="password"]{
+            width: 100%;
+            height: 40px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            padding-left: 10px;
+        }
+        input[type="submit"]{
+            background-color: blue;
+            color: #b68181;
+        }
+        input[type="submit"]:hover{
+            background-color: rgb(10, 15, 3);
+            color: #4499bb;
+        }
+        input[type="checkbox"]{
+            background-color: #000;
+            color: #fff;
+            font-size: 15px;
+            font-weight: 600;
+            border: none;
+            border-radius: 5px;
+            height: 25px;
+            display: flex;
+            flex-direction: flex-start;
+            margin-bottom: 10px;
+        }
+        .right form label{
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 5px;
+            align-items: flex-start;
+        }
+        .check_box {
+        display: flex;
+        flex-direction: flex-start;
+        align-items: center;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container-2">
+        <div class="left">
+            <div class="left-box">
+                <div class="column1">
+                    <img src="verified.png" alt="">
+                    <h2>Quick and free to sign up</h2>
+                    <p>Enter your email address to do </p>
+                    <p>the signup and to create an account</p>
+                </div>
+                <div class="column1">
+                    <img src="verified.png" alt="">
+                    <h2>Cross-platform solution</h2>
+                    <p>Preview your newsletters on</p> 
+                    <p>any device before sending them out</p>
+                </div>
+                <div class="column1">
+                    <img src="verified.png" alt="">
+                    <h2>Start sending emails</h2>
+                    <p>Use your api or take our templates </p>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            
+            <form action="">
+                <h2>Create an account</h2>
+                <label for="Email">Email</label>
+                <input type="text" name="email" id="email" placeholder="Enter your Email address">
+                <label for="name">Full name</label>
+                <input type="text" name="name" id="name" placeholder="Enter your full name">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="type to create a password">
+                <div class="check_box">
+                    <input type="checkbox" name="checkbox" id="checkbox">
+                    <p>get updates and notifications about our products</p>
+                </div>
+                <input type="submit" value="Type to create a password">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
